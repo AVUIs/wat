@@ -89,7 +89,7 @@ public class UniCornerTriUp : MonoBehaviour {
 		int timer = 50;
 
 
-		if (Input.GetKeyDown (KeyCode.Mouse2)) {
+		if (Input.GetKeyDown (KeyCode.Mouse2) || Input.GetKeyDown(KeyCode.K) ) {
 			KOALA=true;
 			count=timer;
 			//print ("mouse = " +  KeyCode.Mouse2);

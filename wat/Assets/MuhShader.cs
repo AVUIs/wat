@@ -181,7 +181,7 @@ public class MuhShader : MonoBehaviour {
 		driver = 1000.0f;
 	}
 
-	int prevState = 0;
+	int prevState = -1;
 
 	float driver = 1000.0f;
 
@@ -245,7 +245,7 @@ public class MuhShader : MonoBehaviour {
 		}
 
 
-		if (Input.GetKeyDown (KeyCode.Backspace)){
+		if (Input.GetKeyDown (KeyCode.Backspace) || Input.GetKeyDown(KeyCode.Mouse1)){
 			state = 10;
 			
 		}

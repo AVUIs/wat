@@ -44,6 +44,9 @@ public class CameraMove : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.Mouse0)) {
 			//transform.Rotate(Vector3.down * Time.deltaTime);
 		}
+		if (Input.GetKeyDown (KeyCode.Mouse0) || Input.GetKeyDown (KeyCode.R))	{
+			this.forwardMovement = Vector3.zero;
+		}
 
 
 		camTranslation = Vector3.Lerp(camTranslation,newNoise,0.01f);
